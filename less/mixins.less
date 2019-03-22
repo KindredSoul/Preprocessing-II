@@ -1,1 +1,13 @@
 // Mixins in here
+.flex-basic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-mobile {
+    .flex-basic;
+    flex-direction: column;
+    align-content: center;
+}
