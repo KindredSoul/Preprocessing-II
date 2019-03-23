@@ -24,6 +24,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   align-content: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -222,7 +223,7 @@ img {
 }
 .main-nav nav a {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 .footer {
   width: 100%;
@@ -299,4 +300,98 @@ img {
 .home .content-pick .btn a {
   text-decoration: none;
   color: inherit;
+}
+@media (max-width: 500px) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .main-nav h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .main-nav nav {
+    margin-top: 5%;
+    width: 100%;
+    padding: 0;
+  }
+  .container {
+    max-width: 500px;
+    padding: 0 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .content-section {
+    border: 1px solid black;
+    margin: 30px 0;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+  }
+  .content-section .text-content {
+    border: 1px solid black;
+    width: 100%;
+    padding: 0;
+  }
+  .content-section .img-content {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .content-section .img-content img {
+    border-radius: 10px;
+  }
+  .inverse-content {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed #C0C0C0;
+  }
+  .inverse-content .text-content {
+    padding-left: 1%;
+    padding-right: 0;
+  }
+  .inverse-content .img-content {
+    padding-right: 1%;
+    padding-left: 0;
+  }
+  .content-destination {
+    width: 75%;
+    margin: 0 auto 30px;
+  }
+  .content-destination img {
+    border-radius: 10px;
+  }
+  .content-pick {
+    padding-top: 30px;
+    border-top: 2px dashed #C0C0C0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .content-pick .destination {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+  .content-pick .btn {
+    text-align: center;
+    background-color: #17866e;
+    padding: 5%;
+    border-radius: 15px;
+    color: white;
+    font-size: 2rem;
+    width: 85%;
+  }
+  .content-pick .btn a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
