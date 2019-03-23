@@ -334,7 +334,6 @@ img {
   }
   .content-section {
     border: 1px solid black;
-    margin: 30px 0;
     width: 100%;
     flex-direction: column;
     align-content: center;
@@ -345,6 +344,7 @@ img {
     padding: 0;
   }
   .content-section .img-content {
+    border: 1px solid black;
     width: 100%;
     height: auto;
     padding: 0;
@@ -353,32 +353,29 @@ img {
     border-radius: 10px;
   }
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed #C0C0C0;
+    flex-direction: column-reverse;
   }
   .inverse-content .text-content {
-    padding-left: 1%;
-    padding-right: 0;
+    padding: 0;
   }
   .inverse-content .img-content {
-    padding-right: 1%;
-    padding-left: 0;
+    padding: 0;
   }
   .content-destination {
-    width: 75%;
+    border: 1px solid black;
+    width: 100%;
     margin: 0 auto 30px;
   }
   .content-destination img {
     border-radius: 10px;
   }
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed #C0C0C0;
-    display: flex;
-    justify-content: space-between;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
   }
   .content-pick .destination {
-    width: 30%;
+    width: 100%;
     margin-bottom: 30px;
   }
   .content-pick .btn {
