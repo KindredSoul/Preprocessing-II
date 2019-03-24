@@ -3,76 +3,54 @@
         // .test-border;
         .flex-mobile;
         h1 {
-            // border: 1px solid black;
+            // .test-border;
+            margin-top: 4%;
             width: 100%;
             text-align: center;
             font-size: 3.0rem;
         }
     
         nav {
-            // border: 1px solid black;
-            margin-top: 5%;
+            // .test-border;
+            margin-bottom: 2%;
             width: 100%;
             padding: 0;
         }
     }
-    .container {
+    .home {
+      padding: 0 5%;
+
+      .content-section {
         // .test-border;
-        max-width: 500px;
-        padding: 0 4%;
-        .flex-mobile;
-    }
-    .content-section {
-        .test-border;
-        // margin: 30px 0;
-        width: 100%;
         flex-direction: column;
-        align-content: center;
+        height: auto;
+
         
         .text-content {
-          .test-border;
           width: 100%;
           padding: 0;
         }
     
         .img-content {
-          .test-border;
+          max-width: 100%;
           width: 100%;
           height: auto;
           padding: 0;
-    
-          img {
-            border-radius: 10px;
-          }
         }
       }
     
       .inverse-content {
         flex-direction: column-reverse;
-    
-        .text-content {
-          padding: 0;
-        }
-    
-        .img-content {
-          padding: 0;
-        }
       }
     
       .content-destination {
-          .test-border;
         width: 100%;
-        margin: 0 auto 30px;
-    
-        img {
-          border-radius: 10px;
-        }
       }
     
       .content-pick {
-        .test-border;
         flex-direction: column;
-        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
     
         .destination {
           // .test-border;
@@ -81,12 +59,9 @@
         }
     
           .btn {
-            .btn-style;
-            font-size: 2.0rem;
-            width: 85%;
-              a {
-                .a-custom;
-              }
+            .btn-style(3% 0);
+            width: 100%;
           }
       }
-  }
+    }// home
+}

@@ -15,10 +15,10 @@
     align-items: center;
 }
 
-.btn-style {
+.btn-style(@padding: 5% 0) {
     text-align: center;
     background-color: @button-bg;
-    padding: 5%;
+    padding: @padding;
     border-radius: 15px;
     color: white;
 }
@@ -26,6 +26,6 @@
 .flex-mobile {
     .flex-basic;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
